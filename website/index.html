@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <title>KiU</title>
         <link rel="stylesheet" type="text/css" href="css/style.css"></style>
     <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.8/css/swiper.min.css">
     </head>
 <body>
     <header>
@@ -12,11 +14,11 @@
             <nav class="header-nav">
                 <a class="nav-button nav-home" href="#home">home</a>
                 <a class="nav-button nav-restaurant" href="#restaurant">restaurant</a>
-                <a class="nav-button nav-gallery" href="gallery">gallery</a>
+                <a class="nav-button nav-menu" href="#menu">menu</a>
                 <a class="header-logo-link nav-home" href="/"><img class="header-logo" src="images/logo_light.png"/></a>
-                <a class="nav-button nav-menu" href="menu">menu</a>
-                <a class="nav-button nav-reservations" href="reservations">reservations</a>
-                <a class="nav-button nav-social" href="social">social</a>
+                <a class="nav-button nav-drinks" href="#drinks">drinks</a>
+                <a class="nav-button nav-reservations" href="#reservations">reservations</a>
+                <a class="nav-button nav-social" href="#social">social</a>
             </nav>
             <div class="spacer"></div>
             <div class="header-title">Modern American Dining</div>
@@ -25,13 +27,13 @@
         </div>
     </header>
     <div class="site">
-        <div class="restaurant">
+        <div id="restaurant" class="restaurant" NAME="restaurant">
             <div class="restaurant-blurb">
                 <h2 class="restaurant-blurb-title">Located in Park Slope, Pacific Tavern is a purveyor of fine American dining from the esteemed Chef Billy Lang.</h2>
                 <h3 class="restaurant-blurb-author">PHOTOS BY NICOLE FRANZEN</h3>
                 <p class="restaurant-blurb-description">Pacific Tavern opened in May 2010 and is located inside the Smith Hotel Brooklyn. Since then, Golden Spork winner Chef Lang has been serving both quality interpretations of classic dishes and daring new ventures into the uncharted territories of food.
 
-                    Pacific Tavern's interior, designed by the award-winning Hayden Collective, reflects the hip sensibilities of the surrounding area while also paying tribute to Brooklyn's storied past. The multi-level restaurant offers the choice to observe passers-by in the glass-encased Cascade Bar on the 2nd floor, or watch the art of cooking as it occurs in the open-kitchen dining room.</p>
+                    <br/><br/>Pacific Tavern's interior, designed by the award-winning Hayden Collective, reflects the hip sensibilities of the surrounding area while also paying tribute to Brooklyn's storied past. The multi-level restaurant offers the choice to observe passers-by in the glass-encased Cascade Bar on the 2nd floor, or watch the art of cooking as it occurs in the open-kitchen dining room.</p>
             </div>
             <div class="restaurant-space"></div>
             <div class="restaurant-info">
@@ -47,22 +49,326 @@
                 </div>
                 <div class="restaurant-hours">
                     <h3 class="restaurant-info-title">hours</h3>
-                    <p>M-Th 5p-11p</p>
+                    <p>M-Th 11a-11p</p>
                     <p>F-Sa 12p-11p</p>
                     <p>Su 10a-11p</p>                   
                 </div>               
             </div>
         </div>
-        <div class="menu">
-        </div>
-        <div class="reservations">
-        </div>
-        <div class="social">
-        </div>
+        <div id="gallery" class="gallery">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
 
+                    <div class="swiper-slide"><img class="slideshow-image" src="images/slideshow_1.jpg"/></div>
+                    <div class="swiper-slide"><img class="slideshow-image" src="images/slideshow_2.jpg"/></div>
+                    <div class="swiper-slide"><img class="slideshow-image" src="images/slideshow_3.jpg"/></div>
+                    <div class="swiper-slide"><img class="slideshow-image" src="images/slideshow_4.jpg"/></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+        <div id="menu" class="menu">
+            <div class="menu-container">
+                <div class="menu-logo"><img src="images/logo_dark.png"/></div>
+                <div class="menu-header">SNACKS X SALADS</div>
+                <div class="menu-row menu-snacks">
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Primavera Salad</div>
+                            <div class="menu-item-price">$28</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">arugula, cherry tomato, shaved almonds, shallot vinaigrette</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Grilled Calamari</div>
+                            <div class="menu-item-price">$12</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">tomato sauce, lemon</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Mac and Cheese</div>
+                            <div class="menu-item-price">$13</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">cheddar, gruyere, gouda, truffle oil</div>
+                    </div>
+                </div>
+                <div class="menu-header">SANDWICHES</div>
+                <div class="menu-row menu-sandwiches">
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Alpine</div>
+                            <div class="menu-item-price">$10</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">fontina, gruyere, truffle oil on multigrain toast</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Milanese</div>
+                            <div class="menu-item-price">$13</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">fried chicken, lettuce, tomato, mayo on focaccia</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Flatiron</div>
+                            <div class="menu-item-price">$15</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">steak, havarti, fried onions, chipotle mayo on challah</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Raleigh</div>
+                            <div class="menu-item-price">$13</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">coleslaw, barbecue sauce, pickles on sesame roll</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Reuben</div>
+                            <div class="menu-item-price">$15</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">pastrami, coleslaw, russian dressing on rye</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Classic</div>
+                            <div class="menu-item-price">$15</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">ham, unmelted cheddar, mayo on kaiser roll</div>
+                    </div>
+                </div>
+                <div class="menu-header">MAINS</div>
+                <div class="menu-row menu-mains">
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Lobster Bolognese</div>
+                            <div class="menu-item-price">$28</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">linguini, lobster tail, herbs in tomato & garlic broth</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Braised Lamb</div>
+                            <div class="menu-item-price">$25</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">jasmine rice pilaf, roasted almonds, sesame soy reduction</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Burger</div>
+                            <div class="menu-item-price">$20</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">gruyere, fried onions, special sauce on challah roll</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Dry-Aged Rib-Eye</div>
+                            <div class="menu-item-price">$36</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">grass-fed, with arugula salad, smashed potatoes</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-row">
+                            <div class="menu-item-name">Salmon Steak</div>
+                            <div class="menu-item-price">$28</div>
+                        </div>
+                        <div class="menu-item-row menu-item-desc">quinoa, roasted carrots, mustard lemon glaze</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="drinks" class="drinks">
+            <div class="drinks-logo"><img src="images/logo_light_2.png"/></div>
+            <div class="drinks-container">
+                <div class="drinks-col drinks-cocktails">
+                    <div class="drinks-header">COCKTAILS</div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Manhattan</div>
+                            <div class="drinks-item-price">$11</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">rye whisky, sweet vermouth, bitters</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Dark & Stormy</div>
+                            <div class="drinks-item-price">$9</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">black rum, ginger beer, lime</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Old Cuban</div>
+                            <div class="drinks-item-price">$11</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">aged rum, lime juice, bitters, champagne</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Negroni</div>
+                            <div class="drinks-item-price">$11</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">gin, vermouth rosso, campari</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Bloody Mary</div>
+                            <div class="drinks-item-price">$9</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">tomato juice, vodka, tabasco, bacon bits</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Green & Amber</div>
+                            <div class="drinks-item-price">$12</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">vodka, single-malt scotch, honey, lemon, green tea</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">White Russian</div>
+                            <div class="drinks-item-price">$9</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">vodka, tia maria, heavy cream</div>
+                    </div>
+                </div>
+                <div class="drinks-col drinks-wine">
+                    <div class="drinks-header">WINE</div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Sauvignon Blanc</div>
+                            <div class="drinks-item-price">$18</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">cloudy bay, new zealand, 2012</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Pinot Grigio</div>
+                            <div class="drinks-item-price">$13</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">corte della torre, veneto, 2012</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Chardonnay</div>
+                            <div class="drinks-item-price">$13</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">gavilan, monterey, 2012</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Pinot Noir</div>
+                            <div class="drinks-item-price">$14</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">heron, napa, 2011</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Cabernet Sauvignon</div>
+                            <div class="drinks-item-price">$12</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">slingshot, napa, 2010</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Pianrosso</div>
+                            <div class="drinks-item-price">$22</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">brunello di montacino, toscana, 2003</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Prosecco</div>
+                            <div class="drinks-item-price">$14</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">bortolotti, brut, veneto, 2010</div>
+                    </div>
+                </div>
+                <div class="drinks-col drinks-beer">
+                    <div class="drinks-header">BEER</div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Lagunitas</div>
+                            <div class="drinks-item-price">$7</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">ipa, california</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">21st Amendment</div>
+                            <div class="drinks-item-price">$8</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">back in black ipa, san francisco</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Breakside</div>
+                            <div class="drinks-item-price">$8</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">wanderlust ipa, oregon</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Hill Farmstead</div>
+                            <div class="drinks-item-price">$11</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">edward apa, vermont</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Alchemist</div>
+                            <div class="drinks-item-price">$15</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">heady topper, vermont</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Hofbräu</div>
+                            <div class="drinks-item-price">$8</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">dunkel, munich</div>
+                    </div>
+                    <div class="drinks-item">
+                        <div class="drinks-item-row">
+                            <div class="drinks-item-name">Delirium Tremens</div>
+                            <div class="drinks-item-price">$12</div>
+                        </div>
+                        <div class="drinks-item-row drinks-item-desc">golden ale, belgium</div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu" class="reservations">
+            </div>
+            <div id="social" class="social">
+            </div>
+        </div>
     </div>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.8/js/swiper.min.js"></script>
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+            pagination: '.swiper-pagination',
+            // Navigation arrows
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 5500,
+            autoplayDisableOnInteraction:false,
+            loop: true
+        });
+    </script>
 </body>
 </html>

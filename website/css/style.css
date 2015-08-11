@@ -79,6 +79,8 @@ header {
 .site {
     width:100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -87,28 +89,25 @@ header {
 .restaurant {
     height: 400px;
     padding: 50px 0;
-    width: 50%;
+    width: 900px;
     display: flex;
-    justify-content: center;
 }
 
 .restaurant-blurb {
     width: 75%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content:space-between;
 }
 
 .restaurant-space{
-    width:5%;
+    width: 100px;
 }
 
 .restaurant-info {
     width: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .restaurant-info-title{
@@ -122,14 +121,117 @@ header {
 }
 
 /*gallery*/
+.gallery {
+    width:100%;
+}
 
-
-
+.slideshow-image{
+    max-width:100%; 
+}
 
 /*menu*/
 
+.menu {
+    width: 1000px;
+}
+
+.menu-container{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+.menu-header{
+    color: rgba(255, 139, 56, 1);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.menu-row {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.menu-item{
+    width: 300px;
+    padding: 15px;
+}
+
+.menu-item-row {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-item-name {
+    font-weight: 600;
+}
+.menu-item-desc {
+    width:250px;   
+}
+
+
+/*drinks*/
+.drinks {
+    display: flex;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+            url("../images/menu_background.jpg") 0 -200px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height: 1000px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.drinks-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.drinks-header{
+    color: rgba(255, 139, 56, 1);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.drinks-col {
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding 15px 0;
+    justify-content: flex-start;
+}
+
+.drinks-item{
+    width: 300px;
+    padding: 15px 0;
+    color: white;
+}
+
+.drinks-item-row {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.drinks-item-name {
+    font-weight: 600;
+}
+.drinks-item-desc {
+    width:250px;   
+}
 
 
 /*reservation*/
